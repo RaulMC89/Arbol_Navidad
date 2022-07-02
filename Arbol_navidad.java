@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Arbol_navidad
 {
-    private int sal = 1;
-    private int cont = 1;
+    private int estrellas = 1;
+    private int espacios = 1;
     Scanner sc = new Scanner(System.in);
 
     public Arbol_navidad()
@@ -28,16 +28,16 @@ public class Arbol_navidad
     {
         for (int i = 0; i < pisos; i++)
         {
-            for (int j = 0; j < pisos - cont; j++)
+            for (int j = 0; j < pisos - espacios; j++)
             {
                 System.out.print(" ");
             }
-            for (int k = 0; k < sal; k++)
+            for (int k = 0; k < estrellas; k++)
             {
                 System.out.print("*");
             }
-            sal += 2;
-            cont++;
+            estrellas += 2;
+            espacios++;
             System.out.println();
         }
     }
